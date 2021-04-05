@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_basic"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/card1_w"
+        android:layout_height="@dimen/a80"
+        android:layout_marginTop="@dimen/a30"
+        android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
+        android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+        app:cardCornerRadius="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a30"
+            android:text="Test Name : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/testName"
+            android:layout_width="@dimen/a200"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/a140"
+            android:layout_marginTop="@dimen/card1_mr_bot"
+            >
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/card1_w"
+        android:layout_height="@dimen/a330"
+        android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
+        android:layout_marginTop="@dimen/a130"
+        android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+        app:cardCornerRadius="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a25"
+            android:text="No. of Readings : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_readings"
+            android:layout_width="@dimen/a150"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/a180"
+            android:layout_marginTop="@dimen/a25">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a80"
+            android:text="Add Parameters : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_parameters"
+            android:layout_width="@dimen/a150"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/a180"
+            android:layout_marginTop="@dimen/a80">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a135"
+            android:text="Recommanded \nScore : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/requiredScore"
+            android:layout_width="@dimen/a150"
+            android:layout_height="@dimen/a40"
+            android:layout_marginLeft="@dimen/a180"
+            android:layout_marginTop="@dimen/a140"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a210"
+            android:text="Youtube Video Id : "
+            android:textSize="18sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/para"
+            android:layout_width="@dimen/a300"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:layout_marginTop="@dimen/a250"
+            android:layout_marginLeft="@dimen/a40"
+            android:inputType="textMultiLine" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/save_test_Btn"
+        android:layout_width="@dimen/a200"
+        android:layout_height="@dimen/a42"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/a495"
+        android:layout_marginLeft="@dimen/spinner1_margintop"
+        android:background="@drawable/button_background"
+        >
+    </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animationLayout"
+        android:visibility="gone"
+        >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/a45"
+        android:layout_marginRight="@dimen/a45"
+        android:layout_height="@dimen/a420"
+        android:layout_marginTop="@dimen/a60"
+        android:id="@+id/ok_animation"
+        app:lottie_speed="1.5"
+        app:lottie_fileName="done.json"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved"
+            android:id="@+id/saved_text"
+            android:textColor="#00FF0A"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:layout_marginLeft="@dimen/a140"
+            android:layout_marginTop="@dimen/a420"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/g1" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+    </group>
+    <group android:id="@+id/g11" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_addtest"
+            android:icon="@drawable/new_file"
+            android:title="Add Test" />
+    </group>
+    <group android:id="@+id/g2" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/new_group"
+            android:title="Add Athelete" />
+    </group>
+    <group android:id="@+id/g3" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/users"
+            android:title="All Atheletes" />
+    </group>
+    <group android:id="@+id/g4" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_showscore"
+            android:icon="@drawable/test_passed"
+            android:title="Score Analysis" />
+    </group>
+    <group android:id="@+id/g5" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_developer"
+            android:icon="@drawable/about"
+            android:title="About Developer" />
+    </group>
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="@dimen/card1_w"
+    android:layout_height="@dimen/a80"
+    android:layout_marginTop="@dimen/a30"
+    android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
+    android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+    app:cardCornerRadius="25dp"
+    >
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/showscore_img1_marginLeft"
+            android:layout_marginLeft="@dimen/a30"
+            android:layout_marginRight="@dimen/a40"
+            android:layout_height="wrap_content"
+            >
+        </SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/card1_w"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/card1_mr_bot"
+        android:layout_marginTop="@dimen/a140"
+        android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
+        android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+        app:cardCornerRadius="25dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:longClickable="true"
+            android:layout_marginLeft="@dimen/a30"
+            android:layout_marginRight="@dimen/a40">
+
+
+        </ListView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

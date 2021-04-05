@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/a200"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/showscore_img1_marginright"
+        android:layout_marginLeft="@dimen/card1_mr_bot"
+        android:layout_marginRight="@dimen/card1_mr_bot"
+        >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:id="@+id/videoPlayer"
+            android:layout_height="match_parent"
+
+            app:autoPlay="false"
+            app:showYouTubeButton="false"
+            >
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/select_test"
+        android:layout_width="@dimen/spinner1_w"
+        android:layout_height="@dimen/spinner1_h"
+        android:layout_marginTop="@dimen/a250"
+        android:layout_marginLeft="@dimen/spinner1_marginleft"
+        android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+        android:background="@drawable/button_background"
+        >
+    </Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/a320"
+        android:layout_marginLeft="@dimen/card1_mr_bot"
+        android:layout_marginRight="@dimen/card1_mr_bot"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/a25"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_marginBottom="@dimen/a60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                        android:layout_height="@dimen/a250"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="@dimen/a2"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reading 1: "
+                    android:layout_marginTop="@dimen/a2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/a10"
+                    >
+                </TextView>
+
+                    <TextView
+                        android:id="@+id/score_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/a60"
+                        android:layout_marginLeft="@dimen/a25"
+                        android:text="Score :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <EditText
+                        android:id="@+id/output_score"
+                        android:text="0"
+                        android:layout_width="@dimen/a110"
+                        android:layout_height="@dimen/a45"
+                        android:layout_marginTop="@dimen/a90"
+                        android:layout_marginLeft="@dimen/a42"
+                        />
+                    <TextView
+                        android:id="@+id/time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/a145"
+                        android:layout_marginLeft="@dimen/a25"
+                        android:text="Time :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <EditText
+                        android:id="@+id/output_time"
+                        android:text="0"
+                        android:layout_width="@dimen/a110"
+                        android:layout_height="@dimen/a45"
+                        android:layout_marginTop="@dimen/a180"
+                        android:layout_marginLeft="@dimen/a42"
+                        />
+                <RelativeLayout
+                    android:id="@+id/timerLayout1"
+                    android:layout_marginTop="@dimen/a30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/a180"
+                    android:layout_height="@dimen/a180"
+                    android:src="@drawable/circle"
+                    android:id="@+id/circular_image"
+                    android:layout_marginLeft="@dimen/a180"
+                    android:layout_marginTop="@dimen/a30"
+                    />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/undo"
+                        android:layout_width="@dimen/a30"
+                        android:layout_height="@dimen/a30"
+                        android:src="@drawable/undo"
+                        android:layout_marginLeft="@dimen/a325"
+                        android:layout_marginTop="@dimen/card1_mr_bot"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <Button
+                        android:id="@+id/btnStart"
+                        android:layout_width="@dimen/a130"
+                        android:layout_height="@dimen/a130"
+                        android:layout_marginLeft="@dimen/a201"
+                        android:layout_marginTop="@dimen/a60"
+                        android:text="START"
+                        android:textStyle="bold"
+                        android:textSize="24dp"
+                        android:background="@drawable/playbtn"
+                        />
+
+                    <Button
+                        android:id="@+id/btnStop"
+                        android:layout_width="@dimen/a130"
+                        android:layout_height="@dimen/a130"
+                        android:layout_marginLeft="@dimen/a201"
+                        android:layout_marginTop="@dimen/a60"
+                        android:text="STOP"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textSize="24dp"
+                        android:background="@drawable/playbtn"
+                        />
+
+                    <Chronometer
+                        android:id="@+id/timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/a230"
+                        />
+
+                </RelativeLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2"
+                   android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/a270"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/a250"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="@dimen/a2"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reading 2: "
+                            android:layout_marginTop="@dimen/a2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/a10"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/score_txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/a60"
+                            android:layout_marginLeft="@dimen/a25"
+                            android:text="Score :"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/output_score2"
+                            android:layout_width="@dimen/a110"
+                            android:text="0"
+                            android:layout_height="@dimen/a45"
+                            android:layout_marginTop="@dimen/a90"
+                            android:layout_marginLeft="@dimen/a42"
+                            />
+                        <TextView
+                            android:id="@+id/time_txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/a145"
+                            android:layout_marginLeft="@dimen/a25"
+                            android:text="Time :"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/output_time2"
+                            android:text="0"
+                            android:layout_width="@dimen/a110"
+                            android:layout_height="@dimen/a45"
+                            android:layout_marginTop="180dp"
+                            android:layout_marginLeft="@dimen/a42"
+                            />
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/a30"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/timerLayout2"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="@dimen/a180"
+                                android:layout_height="@dimen/a180"
+                                android:src="@drawable/circle"
+                                android:id="@+id/circular_image2"
+                                android:layout_marginLeft="@dimen/a180"
+                                android:layout_marginTop="@dimen/a30"
+                                />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/undo2"
+                                android:layout_width="@dimen/a30"
+                                android:layout_height="@dimen/a30"
+                                android:src="@drawable/undo"
+                                android:layout_marginLeft="@dimen/a325"
+                                android:layout_marginTop="@dimen/card1_mr_bot"
+                                >
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <Button
+                                android:id="@+id/btnStart2"
+                                android:layout_width="@dimen/a130"
+                                android:layout_height="@dimen/a130"
+                                android:layout_marginLeft="@dimen/a201"
+                                android:layout_marginTop="@dimen/a60"
+                                android:text="START"
+                                android:textStyle="bold"
+                                android:textSize="24dp"
+                                android:background="@drawable/playbtn"
+                                />
+
+                            <Button
+                                android:id="@+id/btnStop2"
+                                android:layout_width="@dimen/a130"
+                                android:layout_height="@dimen/a130"
+                                android:layout_marginLeft="@dimen/a201"
+                                android:layout_marginTop="@dimen/a60"
+                                android:text="STOP"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:textSize="24dp"
+                                android:background="@drawable/playbtn"
+                                />
+
+                            <Chronometer
+                                android:id="@+id/timer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="@dimen/a230"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/a60"
+                    android:visibility="gone"
+                    android:id="@+id/layout3"
+                    android:layout_marginTop="@dimen/a530"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/a250"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="@dimen/a2"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reading 3: "
+                            android:layout_marginTop="@dimen/a2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/a10"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/score_txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/a60"
+                            android:layout_marginLeft="@dimen/a25"
+                            android:text="Score :"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/output_score3"
+                            android:layout_width="@dimen/a110"
+                            android:layout_height="@dimen/a45"
+                            android:text="0"
+                            android:layout_marginTop="@dimen/a90"
+                            android:layout_marginLeft="@dimen/a42"
+                            />
+                        <TextView
+                            android:id="@+id/time_txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/a145"
+                            android:layout_marginLeft="@dimen/a25"
+                            android:text="Time :"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+                        <EditText
+                            android:id="@+id/output_time3"
+                            android:text="0"
+                            android:layout_width="@dimen/a110"
+                            android:layout_height="@dimen/a45"
+                            android:layout_marginTop="@dimen/a180"
+                            android:layout_marginLeft="@dimen/a42"
+                            />
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/a30"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/timerLayout3"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="@dimen/a180"
+                                android:layout_height="@dimen/a180"
+                                android:src="@drawable/circle"
+                                android:id="@+id/circular_image3"
+                                android:layout_marginLeft="@dimen/a180"
+                                android:layout_marginTop="@dimen/a30"
+                                />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/undo3"
+                                android:layout_width="@dimen/a30"
+                                android:layout_height="@dimen/a30"
+                                android:src="@drawable/undo"
+                                android:layout_marginLeft="@dimen/a325"
+                                android:layout_marginTop="@dimen/card1_mr_bot"
+                                >
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <Button
+                                android:id="@+id/btnStart3"
+                                android:layout_width="@dimen/a130"
+                                android:layout_height="@dimen/a130"
+                                android:layout_marginLeft="@dimen/a201"
+                                android:layout_marginTop="@dimen/a60"
+                                android:text="START"
+                                android:textStyle="bold"
+                                android:textSize="24dp"
+                                android:background="@drawable/playbtn"
+                                />
+
+                            <Button
+                                android:id="@+id/btnStop3"
+                                android:layout_width="@dimen/a130"
+                                android:layout_height="@dimen/a130"
+                                android:layout_marginLeft="@dimen/a201"
+                                android:layout_marginTop="@dimen/a60"
+                                android:text="STOP"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:textSize="24dp"
+                                android:background="@drawable/playbtn"
+                                />
+
+                            <Chronometer
+                                android:id="@+id/timer3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="@dimen/a230"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/save_score_Btn"
+                    android:layout_width="@dimen/a200"
+                    android:layout_height="@dimen/a42"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_background"
+                    android:layout_marginBottom="@dimen/a25"
+                    android:layout_marginLeft="@dimen/a82"
+                    >
+                </Button>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

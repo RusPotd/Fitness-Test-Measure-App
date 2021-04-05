@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/a8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/card1_mr_bot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingVertical="@dimen/a25"
+        android:paddingHorizontal="@dimen/a8"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/a40"
+            android:layout_height="@dimen/a40"
+            android:src="@drawable/test_passed"
+            android:layout_marginStart="@dimen/a30"
+            android:layout_marginEnd="@dimen/a50"
+            />
+
+        <TextView
+            android:id="@+id/test_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jump Test"
+            android:layout_toEndOf="@id/imageView"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

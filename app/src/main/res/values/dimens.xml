@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="showscore_img1_w">35dp</dimen>
+    <dimen name="showscore_img1_marginLeft">15dp</dimen>
+    <dimen name="showscore_img1_marginright">25dp</dimen>
+
+    <dimen name="spinner1_w">280dp</dimen>
+    <dimen name="spinner1_h">50dp</dimen>
+    <dimen name="spinner1_margintop">100dp</dimen>
+    <dimen name="spinner1_marginleft">60dp</dimen>
+
+    <dimen name="card1_w">409dp</dimen>
+    <dimen name="card1_mr_bot">20dp</dimen>
+    <dimen name="card1_mr_top">170dp</dimen>
+
+    <dimen name="a80">80dp</dimen>
+    <dimen name="a90">90dp</dimen>
+    <dimen name="a40">40dp</dimen>
+    <dimen name="a45">45dp</dimen>
+    <dimen name="a290">290dp</dimen>
+    <dimen name="a10">10dp</dimen>
+    <dimen name="a180">180dp</dimen>
+    <dimen name="a30">30dp</dimen>
+    <dimen name="a130">130dp</dimen>
+    <dimen name="a250">250dp</dimen>
+    <dimen name="a2">2dp</dimen>
+    <dimen name="a60">60dp</dimen>
+    <dimen name="a120">120dp</dimen>
+    <dimen name="a110">110dp</dimen>
+    <dimen name="a420">420dp</dimen>
+    <dimen name="a63">63dp</dimen>
+    <dimen name="a140">140dp</dimen>
+    <dimen name="a270">270dp</dimen>
+    <dimen name="a200">200dp</dimen>
+    <dimen name="a330">330dp</dimen>
+    <dimen name="a25">25dp</dimen>
+    <dimen name="a150">150dp</dimen>
+    <dimen name="a135">135dp</dimen>
+    <dimen name="a300">300dp</dimen>
+    <dimen name="a185">185dp</dimen>
+    <dimen name="a505">505dp</dimen>
+    <dimen name="a42">42dp</dimen>
+    <dimen name="a495">495dp</dimen>
+    <dimen name="a230">230dp</dimen>
+    <dimen name="a160">160dp</dimen>
+    <dimen name="a85">85dp</dimen>
+    <dimen name="a1">1dp</dimen>
+    <dimen name="a70">70dp</dimen>
+    <dimen name="a320">320dp</dimen>
+    <dimen name="a325">325dp</dimen>
+    <dimen name="a201">201dp</dimen>
+    <dimen name="a530">530dp</dimen>
+    <dimen name="a800">800dp</dimen>
+    <dimen name="a82">82dp</dimen>
+    <dimen name="a50">50dp</dimen>
+    <dimen name="a8">8dp</dimen>
+    <dimen name="a4">4dp</dimen>
+    <dimen name="a22">22dp</dimen>
+    <dimen name="a240">240dp</dimen>
+    <dimen name="a210">210dp</dimen>
+    <dimen name="a35">35dp</dimen>
+    <dimen name="a145">145dp</dimen>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/card1_w"
+        android:layout_height="@dimen/a150"
+        android:layout_marginTop="@dimen/a30"
+        android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
+        android:layout_marginRight="@dimen/showscore_img1_marginLeft"
+        app:cardCornerRadius="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a30"
+            android:text="Athelete Name : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="@dimen/a200"
+            android:id="@+id/uname"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/a180"
+            android:layout_marginTop="@dimen/card1_mr_bot"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card1_mr_bot"
+            android:layout_marginTop="@dimen/a85"
+            android:text="Gender : "
+            android:textSize="18sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="@dimen/a150"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/a180"
+            android:layout_marginTop="@dimen/a80">
+        </Spinner>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="@dimen/a200"
+        android:layout_height="@dimen/a42"
+        android:id="@+id/addUserSaveBtn"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/a230"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        >
+    </Button>
+
+</RelativeLayout>
