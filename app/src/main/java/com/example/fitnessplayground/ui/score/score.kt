@@ -299,6 +299,7 @@ class score : Fragment(), OnChartValueSelectedListener{
                             }
                             else{
                                 dataSet.add(set1)
+
                             }
 
                             set1.fillAlpha = 110
@@ -499,6 +500,9 @@ class score : Fragment(), OnChartValueSelectedListener{
             }
         }
         else{
+            score_2_out.setText("")
+            score_3_out.setText("")
+
             if(Param==2){
                 score_1_out.setText(((set1.getEntryForIndex(index).y)/1000).toString())
             }else{
