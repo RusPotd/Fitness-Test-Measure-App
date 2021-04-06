@@ -54,11 +54,15 @@
 	<dimen name="a1">1dp</dimen>
 	<dimen name="a2">2dp</dimen>
 	<dimen name="a4">3.9dp</dimen>
+	<dimen name="a218">212.8dp</dimen>
 	<dimen name="a8">7.8dp</dimen>
+	<dimen name="a214">208.9dp</dimen>
+	<dimen name="a216">210.8dp</dimen>
 	<dimen name="a70">68.3dp</dimen>
 	<dimen name="a210">205dp</dimen>
 	<dimen name="a530">517.3dp</dimen>
 	<dimen name="a135">131.8dp</dimen>
+	<dimen name="a212">206.9dp</dimen>
 	<dimen name="showscore_img1_w">34.2dp</dimen>
 	<dimen name="a30">29.3dp</dimen>
 </resources>

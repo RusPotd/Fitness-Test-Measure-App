@@ -66,5 +66,9 @@
     <dimen name="a210">210dp</dimen>
     <dimen name="a35">35dp</dimen>
     <dimen name="a145">145dp</dimen>
+    <dimen name="a212">212dp</dimen>
+    <dimen name="a214">214dp</dimen>
+    <dimen name="a216">216dp</dimen>
+    <dimen name="a218">218dp</dimen>
 
 </resources>

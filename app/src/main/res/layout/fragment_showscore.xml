@@ -11,7 +11,7 @@
         android:id="@+id/profile_image"
         android:layout_width="@dimen/showscore_img1_w"
         android:layout_height="@dimen/showscore_img1_w"
-        android:src="@drawable/view_admin"
+        android:src="@drawable/profile_image"
         android:layout_marginLeft="@dimen/showscore_img1_marginLeft"
         android:layout_marginTop="@dimen/card1_mr_bot"
         app:civ_border_width="2dp"
@@ -90,9 +90,9 @@
                         android:id="@+id/MaxRange"
                         android:layout_width="@dimen/a60"
                         android:text="5"
-                        android:layout_height="@dimen/a40"
-                        android:layout_marginLeft="@dimen/a210"
-                        android:layout_marginTop="@dimen/a10"
+                        android:layout_height="@dimen/a45"
+                        android:layout_marginLeft="@dimen/a218"
+                        android:layout_marginTop="@dimen/showscore_img1_marginLeft"
                         android:hint="Max Limit" />
 
                     <Spinner
