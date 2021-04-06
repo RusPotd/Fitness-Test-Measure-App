@@ -111,23 +111,30 @@ class AddTest : Fragment() {
         //var doneAnimation : LottieAnimationView = root.findViewById(R.id.ok_animation)
 
         saveBtn.setOnClickListener {
+
+            var link = para.text.toString()
+            var lastindex = link.lastIndexOf("/")
+            var videoId = link.substring(lastindex+1)
+            //Toast.makeText(context, videoId, Toast.LENGTH_LONG).show()
+
             var cv = ContentValues()
             cv.put("TESTNAME", testName.text.toString())
             cv.put("READINGS", Readings)
             cv.put("PARAMETERS", Param)
-            cv.put("INFO", para.text.toString())
+            cv.put("INFO", videoId.toString())
             cv.put("NEED", requiredScore.text.toString())
             db.insert("TESTS", null, cv)
-            Toast.makeText(activity, "Insert Success", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(activity, "Insert Success", Toast.LENGTH_SHORT).show()
             testName.setText("")
             para.setText("")
+            requiredScore.setText("")
 
             var rs = db.rawQuery("SELECT * FROM TESTS", null)
 
             if(rs.moveToNext()) {
                 var asa : String
                 asa = rs.getString(1) +" "+ rs.getString(2) +" "+ rs.getString(3)
-                Toast.makeText(context, asa, Toast.LENGTH_LONG).show()
+                //Toast.makeText(context, asa, Toast.LENGTH_LONG).show()
             }
 
             container_basic!!.visibility = View.GONE

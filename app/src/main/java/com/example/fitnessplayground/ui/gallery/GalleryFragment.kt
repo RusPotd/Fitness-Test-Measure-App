@@ -66,20 +66,33 @@ class GalleryFragment : Fragment() {
         var db = helper.readableDatabase
 
         saveBtn.setOnClickListener {
-            var cv = ContentValues()
-            cv.put("NAME", uname.text.toString())
-            cv.put("GENDER", selectedGender)
-            db.insert("USERS", null, cv)
-            Toast.makeText(activity, "Insert Success", Toast.LENGTH_SHORT).show()
-            uname.setText("")
 
             var rs = db.rawQuery("SELECT * FROM USERS", null)
 
-            if(rs.moveToNext()) {
+            var count = 0
+            var userName = uname.text.toString()
+
+            while(rs.moveToNext()) {
                 var asa : String
-                asa = rs.getString(0) +" "+ rs.getString(1) +" "+ rs.getString(2)
-                Toast.makeText(context, asa, Toast.LENGTH_LONG).show()
+                asa = rs.getString(1)
+                if(userName==asa){
+                    Toast.makeText(context, "Username already exist", Toast.LENGTH_LONG).show()
+                }
+                else{
+                    count+=1
+                }
+                //Toast.makeText(context, asa, Toast.LENGTH_LONG).show()
             }
+
+            if(count==rs.count){
+                var cv = ContentValues()
+                cv.put("NAME", uname.text.toString())
+                cv.put("GENDER", selectedGender)
+                db.insert("USERS", null, cv)
+                Toast.makeText(activity, "Insert Success", Toast.LENGTH_SHORT).show()
+                uname.setText("")
+            }
+
         }
 
         return root

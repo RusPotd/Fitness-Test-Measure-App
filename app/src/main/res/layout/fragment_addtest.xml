@@ -98,7 +98,7 @@
         <EditText
             android:id="@+id/requiredScore"
             android:layout_width="@dimen/a150"
-            android:layout_height="@dimen/a40"
+            android:layout_height="@dimen/a45"
             android:layout_marginLeft="@dimen/a180"
             android:layout_marginTop="@dimen/a140"
             />
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/card1_mr_bot"
             android:layout_marginTop="@dimen/a210"
-            android:text="Youtube Video Id : "
+            android:text="Youtube Video Link : "
             android:textSize="18sp">
         </TextView>
 

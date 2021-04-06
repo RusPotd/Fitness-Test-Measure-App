@@ -213,6 +213,7 @@ class score : Fragment(), OnChartValueSelectedListener{
 
                             var i = 1
                             var min = 10000f
+                            var max = 0f
 
                             while (rs.moveToNext()) {
                                 yValues.add(
@@ -224,6 +225,9 @@ class score : Fragment(), OnChartValueSelectedListener{
                                 i += 1
                                 if (rs.getInt(s1) < min) {
                                     min = rs.getInt(s1).toFloat()
+                                }
+                                if (rs.getInt(s1) > max) {
+                                    max = rs.getInt(s1).toFloat()
                                 }
                             }
 
@@ -254,6 +258,9 @@ class score : Fragment(), OnChartValueSelectedListener{
                                     if (rs.getInt(s2) < min) {
                                         min = rs.getInt(s2).toFloat()
                                     }
+                                    if (rs.getInt(s2) > max) {
+                                        max = rs.getInt(s2).toFloat()
+                                    }
                                 }
 
                                 var set2 = LineDataSet(zValues, "Set 2")
@@ -277,6 +284,9 @@ class score : Fragment(), OnChartValueSelectedListener{
                                     i += 1
                                     if (rs.getInt(s3) < min) {
                                         min = rs.getInt(s3).toFloat()
+                                    }
+                                    if (rs.getInt(s3) > max) {
+                                        max = rs.getInt(s3).toFloat()
                                     }
                                 }
 
@@ -315,9 +325,9 @@ class score : Fragment(), OnChartValueSelectedListener{
                             mChart.setPinchZoom(true)
 
                             if (Param == 2) {
-                                minScore.setText((min / 1000).toString())
+                                minScore.setText((min / 1000).toString())  //if time then show min
                             } else {
-                                minScore.setText(min.toString())
+                                minScore.setText(max.toString()) //if score then show max
                             }
                         }
                         else{
@@ -368,7 +378,7 @@ class score : Fragment(), OnChartValueSelectedListener{
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if(MaxRange.text.toString()!="") {
                     Toast.makeText(requireContext(), mChart.visibleXRange.toString(), Toast.LENGTH_SHORT).show()
-                    if(mChart.visibleXRange.toInt() > MaxRange.text.toString().toInt()){
+                    if(mChart.visibleXRange.toFloat() > MaxRange.text.toString().toFloat()){
                         //Log.i("Max", "Max -> visible : "+mChart.visibleXRange.toString()+" got : "+MaxRange.text.toString())
                         mChart.setVisibleXRangeMaximum(MaxRange.text.toString().toFloat()) //decide minimum to show
                     }

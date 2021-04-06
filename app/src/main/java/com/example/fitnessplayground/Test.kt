@@ -11,6 +11,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 import de.hdodenhof.circleimageview.CircleImageView
+import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.content_test.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -159,7 +160,7 @@ class Test : AppCompatActivity() {
 
         val b = intent.extras
         val Test_name = b!!.getString("testName")
-        Toast.makeText(applicationContext, Test_name, Toast.LENGTH_LONG).show()
+        //Toast.makeText(applicationContext, Test_name, Toast.LENGTH_LONG).show()
 
         chronometer.base = SystemClock.elapsedRealtime()
         chronometer2.base = SystemClock.elapsedRealtime()
